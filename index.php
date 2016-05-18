@@ -1,0 +1,75 @@
+<?
+header("Content-Type:text/html; charset=utf-8");
+?>
+<html>
+	<head>
+		<title>Гостьова книга</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="game.js"></script>
+	</head>
+	
+	<body>
+   		<div id='conteiner'>
+   			<div id='head'>
+   			</br>	
+	    		<h1 style='color:#07CFCC'><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Гостьова книга<i></h1>
+	    		<h3 style='color:#07CFCC'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V 1.1</h3>
+	    	</div>
+    			
+		    <div id='menu' align='center'>
+		    	</br></br>
+		    	<a href="">
+		    		<img src='img/shablon_knopka1.png'> <!-- тут буде головна сторінка 
+		    		(на ній наприклад буде інформація про фірму, на яку люди будуть відгук заришати).-->
+		    	</a>
+
+		    	</br></br>
+		    	<a href="content/vidhuk.php">
+		    		<img src='img/shablon_knopka2.png'> <!-- тут буде силка на сторінку, де можна відгуки залишити-->
+		    	</a>
+
+		    	</br></br>
+		    	<a href="content/result.php">
+		    		<img src='img/shablon_knopka3.png'> <!-- тут буде силка на сторінку, де можна переглядати раніше залишені відгуки-->
+		    	</a>
+		    </div>
+		    		
+			<div id='content' text-color='#AECCAC'>	
+				<h3> Старі, добрі ПЯТНАШКИ)))</h3></br>
+				</br><div align='center'>
+				<canvas id="bord" width="400" height="400">
+				My bord
+				</canvas>
+				<br>
+
+				<script>play();</script>
+
+				</br><button onclick="play()" align='center'>New game</botton> 
+				</div></br>
+			    <?/*
+			    	$fp=fopen("text.txt",r);
+			    	while (!feof($fp)) {
+			    		echo "<p> &nbsp;&nbsp;".fgets($fp)."</p>";
+			    	}*/
+			    ?>
+<!--bigmir)net TOP 100-->
+<script type="text/javascript" language="javascript"><!--
+function BM_Draw(oBM_STAT){
+document.write('<table cellpadding="0" cellspacing="0" border="0" style="display:inline;margin-right:4px;"><tr><td><div style="font-family:Tahoma;font-size:10px;padding:0px;margin:0px;"><div style="width:7px;float:left;background:url(\'//i.bigmir.net/cnt/samples/default/b54_left.gif\');height:17px;padding-top:2px;background-repeat:no-repeat;"></div><div style="float:left;background:url(\'//i.bigmir.net/cnt/samples/default/b54_center.gif\');text-align:left;height:17px;padding-top:2px;background-repeat:repeat-x;"><a href="http://www.bigmir.net/" target="_blank" style="color:#0000ab;text-decoration:none;">bigmir<span style="color:#ff0000;">)</span>net</a>  <span style="color:#98b4f4;">хиты</span> <span style="color:#426ed2;font:10px Tahoma;">'+oBM_STAT.hits+'</span> <span style="color:#98b4f4;">хосты</span> <span style="color:#426ed2;font:10px Tahoma;">'+oBM_STAT.hosts+'</span></div><div style="width:7px;float: left;background:url(\'//i.bigmir.net/cnt/samples/default/b54_right.gif\');height:17px;padding-top:2px;background-repeat:no-repeat;"></div></div></td></tr></table>');
+}
+//-->
+</script>
+<script type="text/javascript" language="javascript"><!--
+bmN=navigator,bmD=document,bmD.cookie='b=b',i=0,bs=[],bm={o:1,v:16944147,s:16944147,t:0,c:bmD.cookie?1:0,n:Math.round((Math.random()* 1000000)),w:0};
+for(var f=self;f!=f.parent;f=f.parent)bm.w++;
+try{if(bmN.plugins&&bmN.mimeTypes.length&&(x=bmN.plugins['Shockwave Flash']))bm.m=parseInt(x.description.replace(/([a-zA-Z]|\s)+/,''));
+else for(var f=3;f<20;f++)if(eval('new ActiveXObject("ShockwaveFlash.ShockwaveFlash.'+f+'")'))bm.m=f}catch(e){;}
+try{bm.y=bmN.javaEnabled()?1:0}catch(e){;}
+try{bmS=screen;bm.v^=bm.d=bmS.colorDepth||bmS.pixelDepth;bm.v^=bm.r=bmS.width}catch(e){;}
+r=bmD.referrer.replace(/^w+:\/\//,'');if(r&&r.split('/')[0]!=window.location.host){bm.f=escape(r).slice(0,400);bm.v^=r.length}
+bm.v^=window.location.href.length;for(var x in bm) if(/^[ovstcnwmydrf]$/.test(x)) bs[i++]=x+bm[x];
+bmD.write('<sc'+'ript type="text/javascript" language="javascript" src="//c.bigmir.net/?'+bs.join('&')+'"></sc'+'ript>');
+//-->
+</script>
+</body>
+</html>

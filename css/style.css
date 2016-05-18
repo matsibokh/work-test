@@ -1,0 +1,47 @@
+body {
+background-image: url('../img/background.jpg'); 
+}
+
+#conteiner {
+margin: auto;
+width: 100%;
+}
+
+#head {
+/*outline:2px solid #A1A9A8;*/
+width: 100%;
+height: 20%;
+}
+
+#menu {
+float: left;
+width: 25%;
+}
+
+#content {
+color: #AECCAC;
+border:4px solid #A1A9A8;
+float: left;
+width: 73%;
+}
+
+#form {
+color: #AECCAC;
+float: left;
+width: 33%;
+height: 80%;
+}
+
+#filter {
+color: #AECCAC;
+border:2px solid #A1A9A8;
+float: left;
+width: 100%;
+height: 5%;	
+}
+
+#result {
+color: #AECCAC;
+float: left;
+width: 100%;
+}
